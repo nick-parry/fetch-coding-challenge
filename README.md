@@ -28,6 +28,16 @@ I wrote this on my Ubuntu 22 machine. I have been using Ubuntu as my workstation
 I didn't add any OS checks, so I am not 100% sure it will work on Mac. Specifically, I am not sure about how I am using
 `sed` and `date` and if that will play nice on a BSD based system? Sorry. 
 
+My brother took it for a spin on a Mac and did find some problems. I think they are related to the versions of yq/jq.
+Here is what I am using for reference;
+```
+$ yq --version
+yq (https://github.com/mikefarah/yq/) version v4.44.3
+$ jq --version
+jq-1.7.1
+```
+Hopefully this helps if you are trying to run this monstrosity.
+
 Here is the output of me running it. 
 ```
 $ ./healthCheck.sh input.yaml 
