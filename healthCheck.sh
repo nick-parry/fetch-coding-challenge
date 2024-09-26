@@ -134,7 +134,7 @@ function healthCheck() {
             if [[ $(echo "$l" | grep -i 'user-agent') ]];then
                 continue
             fi
-            # Since this is a key/value already, lets just assume it's perfect and
+            # Since this is a key/value already, lets just assume its perfect and
             # go for it.
             echo -H "'$(echo "$l" | sed 's/"//g' | sed 's/,$//')'"
         done)"
