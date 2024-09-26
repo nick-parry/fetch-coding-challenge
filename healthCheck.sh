@@ -135,7 +135,7 @@ function healthCheck() {
                 continue
             fi
             # Since this is a key/value already, lets just assume it's perfect and
-            # go for it. :)
+            # go for it.
             echo -H "'$(echo "$l" | sed 's/"//g' | sed 's/,$//')'"
         done)"
     fi
